@@ -1,0 +1,23 @@
+{
+  "name": "imap-attachments",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "imap",
+    "attachments",
+    "mail"
+  ],
+  "author": "paulll",
+  "license": "UNLICENCED",
+  "dependencies": {
+    "base64-stream": "^1.0.0",
+    "commander": "^2.19.0",
+    "filesize.js": "^1.0.2",
+    "imap": "^0.8.19",
+    "rfc2047": "^2.0.1"
+  }
+}
