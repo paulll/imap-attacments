@@ -1,4 +1,4 @@
-Скачивает все вложения с данного почтового ящика в текущую директорию.
+Скачивает все вложения за указанный период времени для заданных аккаунтов
 
 ## Зависимости:
 - node.js
@@ -14,7 +14,7 @@ npm i .
 ## Использование:
 ```
 # в папке проекта
-mkdir downloaded_files
-cd downloaded_files
-node .. -u user@mail.ru -p mYpassw0rd -h imap.mail.ru
+
+
+node . -i passwords.txt -o out -f 12.09.15 -t 12.10.16
 ```
