@@ -103,6 +103,10 @@ const fetch_user = (user, password) => {
 			if (err) throw err;
 			imap.search([['SINCE', date_from], ['BEFORE', date_to]], (err, results) => {
 				if (err) throw err;
+				if (!results.length) {
+					console.log('[!] Сообщений за период не обнаружено');
+					return imap.end();
+				}
 				const f = imap.fetch(results, {
 					bodies: ['HEADER.FIELDS (FROM TO SUBJECT DATE)'],
 					struct: true
